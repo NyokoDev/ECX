@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language UniqueName="es" ReadableName="Español" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2009/XMLSchema/XMLSchema.xsd">
+	<Translations>
+		<Translation ID="MOD_DESCRIPTION" String="Mejora la apariencia visual de tu ciudad con esta herramienta de personalización visual fácil de usar para principiantes." />
+		<Translation ID="MOD_NAME" String="Eyecandy X" />
+		<Translation ID="AMBIENT_TAB" String="Ambiente" />
+		<Translation ID="AMBIENT_TAB_TOOLTIP" String="En esta sección puedes cambiar varias configuraciones relacionadas con el mundo, como la hora del día, latitud, longitud, y la intensidad de la luz solar y ambiental." />
+		<Translation ID="WEATHER_TAB" String="Clima" />
+		<Translation ID="WEATHER_TAB_TOOLTIP" String="En esta sección puedes cambiar varias configuraciones relacionadas con el clima, como la intensidad de la lluvia, nieve y niebla." />
+		<Translation ID="LUT_TAB" String="LUT" />
+		<Translation ID="LUT_TAB_TOOLTIP" String="En esta sección puedes cambiar rápidamente el LUT que deseas utilizar." />
+		<Translation ID="PRESETS_TAB" String="Preajustes" />
+		<Translation ID="PRESETS_TAB_TOOLTIP" String="En esta sección puedes guardar tus configuraciones actuales como un preajuste, cargar preajustes guardados anteriormente o restaurar todo a los valores predeterminados." />
+		<Translation ID="TIME_DAY_TEXT" String="Hora del día" />
+		<Translation ID="DAYNIGHTCYCLE_TEXT" String="Velocidad del ciclo día/noche" />
+		<Translation ID="LAT_TEXT" String="Latitud" />
+		<Translation ID="LOT_TEXT" String="Longitud" />
+		<Translation ID="SUNINTENSITY" String="Intensidad de la luz ambiental" />
+		<Translation ID="EXPOSURE" String="Exposición" />
+		<Translation ID="TIME_DAY_TEXT_DISABLED" String="Hora del día (Desactivada)" />
+		<Translation ID="DNC_SPEED_DISABLED" String="Ciclo día/noche (Desactivado)" />
+		<Translation ID="SELECTLUT_TEXT" String="Seleccionar LUT" />
+		<Translation ID="LOADLUT_TEXT" String="Cargar LUT" />
+		<Translation ID="ALREADYACTLUT_TEXT" String="El LUT seleccionado en la lista ya está activo." />
+		<Translation ID="ENABLELUT_TEXT" String="Activar corrección de color" />
+		<Translation ID="TM_TOOLTIP_TEXT" String="Activa la asignación de tonos cuando esté marcado." />
+		<Translation ID="ENABLE_TM_TEXT" String="Activar asignación de tonos" />
+		<Translation ID="ENABLE_BLOOM_TEXT" String="Activar Bloom" />
+		<Translation ID="RESET_BUTTON_TEXT" String="Restablecer" />
+		<Translation ID="RESET_VALUES_TOOLTIP" String="Restablece todos los valores a los predeterminados." />
+		<Translation ID="LUT_ALREADY_ACTIVE_NOTICE" String="El LUT seleccionado en la lista ya está activo." />
+		<Translation ID="LOAD_LUT_SELECTED" String="Cargar el LUT seleccionado." />
+		<Translation ID="LOADPRESET_TEXT" String="CARGAR PREAJUSTE" />
+		<Translation ID="LOADPRESET_TOOLTIP" String="Cargar el preajuste seleccionado." />
+		<Translation ID="DELETEPRESET_TEXT" String="Eliminar preajuste." />
+		<Translation ID="DELETEPRESET_TOOLTIP" String="Eliminar el preajuste seleccionado actualmente." />
+		<Translation ID="SAVEPRESET_TEXT" String="Guardar como nuevo preajuste." />
+		<Translation ID="SAVESETTINGS_TOOLTIP" String="Guardar la configuración actual como un nuevo preajuste." />
+		<Translation ID="OVERWRITE" String="Sobrescribir" />
+		<Translation ID="OVERWRITE_TOOLTIP" String="Sobrescribir el preajuste existente." />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT" String="Sobrescribir preajuste" />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT2" String="¿Estás seguro de que deseas sobrescribir el preajuste?" />
+		<Translation ID="EXCEPTIONDELETEPRESET" String="Eliminar preajuste" />
+		<Translation ID="EXCEPTIONDELETEPRESET2" String="¿Estás seguro de que deseas eliminar el preajuste?" />
+		<Translation ID="CreateNewPreset" String="Crear nuevo preajuste" />
+		<Translation ID="PresetName" String="Nombre del preajuste" />
+		<Translation ID="Create" String="Crear" />
+		<Translation ID="OverwritePreset" String="Sobrescribir preajuste" />
+		<Translation ID="PresetExists" String="¡El preajuste ya existe: se sobrescribirá!" />
+		<Translation ID="PresetNameTooltip" String="Por favor, introduce un nombre para el preajuste" />
+		<Translation ID="ConfirmOverwrite" String="Confirmar sobrescritura" />
+		<Translation ID="Cancel" String="Cancelar" />
+		<Translation ID="SETTINGS_LOADMOSTRECENT" String="Cargar automáticamente el preset más reciente al iniciar." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="Habilitar control de tiempo." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="Activar la funcionalidad de control de tiempo, incluyendo el deslizador de hora del día." />
+		<Translation ID="SETTINGS_DESIREDKEY" String="Seleccionar tu combinación preferida de teclas para acceder a la interfaz del mod." />
+		<Translation ID="SETTINGS_DEBUGDATA" String="Registrar datos en el registro de salida de depuración." />
+		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Puede afectar el rendimiento." />
+	</Translations>
+</Language>

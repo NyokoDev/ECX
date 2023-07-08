@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language UniqueName="ko" ReadableName="한국어" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2009/XMLSchema/XMLSchema.xsd">
+	<Translations>
+		<Translation ID="MOD_DESCRIPTION" String="비기너 친화적인 시각적 커스터마이제이션 도구로 도시의 시각적 품질을 향상시킵니다." />
+		<Translation ID="MOD_NAME" String="Eyecandy X" />
+		<Translation ID="AMBIENT_TAB" String="환경" />
+		<Translation ID="AMBIENT_TAB_TOOLTIP" String="이 섹션에서는 낮 시간, 위도, 경도 및 태양 및 주변 조명 강도와 같은 여러 월드 관련 설정을 변경할 수 있습니다." />
+		<Translation ID="WEATHER_TAB" String="날씨" />
+		<Translation ID="WEATHER_TAB_TOOLTIP" String="이 섹션에서는 비, 눈 및 안개의 강도와 같은 여러 날씨 관련 설정을 변경할 수 있습니다." />
+		<Translation ID="LUT_TAB" String="LUT" />
+		<Translation ID="LUT_TAB_TOOLTIP" String="이 섹션에서는 사용할 LUT를 빠르게 변경할 수 있습니다." />
+		<Translation ID="PRESETS_TAB" String="프리셋" />
+		<Translation ID="PRESETS_TAB_TOOLTIP" String="이 섹션에서는 현재 설정을 프리셋으로 저장하거나 이전에 저장된 프리셋을 로드하거나 모든 설정을 기본값으로 재설정할 수 있습니다." />
+		<Translation ID="TIME_DAY_TEXT" String="낮 시간" />
+		<Translation ID="DAYNIGHTCYCLE_TEXT" String="주/야 사이클 속도" />
+		<Translation ID="LAT_TEXT" String="위도" />
+		<Translation ID="LOT_TEXT" String="경도" />
+		<Translation ID="SUNINTENSITY" String="환경 조명 강도" />
+		<Translation ID="EXPOSURE" String="노출" />
+		<Translation ID="TIME_DAY_TEXT_DISABLED" String="낮 시간 (비활성화됨)" />
+		<Translation ID="DNC_SPEED_DISABLED" String="주/야 사이클 (비활성화됨)" />
+		<Translation ID="SELECTLUT_TEXT" String="LUT 선택" />
+		<Translation ID="LOADLUT_TEXT" String="LUT 로드" />
+		<Translation ID="ALREADYACTLUT_TEXT" String="목록에서 선택한 LUT은 이미 활성화되어 있습니다." />
+		<Translation ID="ENABLELUT_TEXT" String="색상 보정 활성화" />
+		<Translation ID="TM_TOOLTIP_TEXT" String="활성화되면 톤매핑이 가능해집니다." />
+		<Translation ID="ENABLE_TM_TEXT" String="톤매핑 활성화" />
+		<Translation ID="ENABLE_BLOOM_TEXT" String="플레어 효과 활성화" />
+		<Translation ID="RESET_BUTTON_TEXT" String="초기화" />
+		<Translation ID="RESET_VALUES_TOOLTIP" String="모든 값을 기본값으로 재설정합니다." />
+		<Translation ID="LUT_ALREADY_ACTIVE_NOTICE" String="목록에서 선택한 LUT은 이미 활성화되어 있습니다." />
+		<Translation ID="LOAD_LUT_SELECTED" String="선택한 LUT 로드" />
+		<Translation ID="LOADPRESET_TEXT" String="프리셋 로드" />
+		<Translation ID="LOADPRESET_TOOLTIP" String="선택한 프리셋을 로드합니다." />
+		<Translation ID="DELETEPRESET_TEXT" String="프리셋 삭제" />
+		<Translation ID="DELETEPRESET_TOOLTIP" String="현재 선택한 프리셋을 삭제합니다." />
+		<Translation ID="SAVEPRESET_TEXT" String="새 프리셋으로 저장" />
+		<Translation ID="SAVESETTINGS_TOOLTIP" String="현재 설정을 새로운 프리셋으로 저장합니다." />
+		<Translation ID="OVERWRITE" String="덮어쓰기" />
+		<Translation ID="OVERWRITE_TOOLTIP" String="기존 프리셋을 덮어씁니다." />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT" String="프리셋 덮어쓰기" />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT2" String="정말로 프리셋을 덮어쓰시겠습니까" />
+		<Translation ID="EXCEPTIONDELETEPRESET" String="프리셋 삭제" />
+		<Translation ID="EXCEPTIONDELETEPRESET2" String="정말로 프리셋을 삭제하시겠습니까" />
+		<Translation ID="CreateNewPreset" String="새 프리셋 생성" />
+		<Translation ID="PresetName" String="프리셋 이름" />
+		<Translation ID="Create" String="생성" />
+		<Translation ID="OverwritePreset" String="프리셋 덮어쓰기" />
+		<Translation ID="PresetExists" String="프리셋이 이미 존재합니다. 덮어쓰기 될 것입니다!" />
+		<Translation ID="PresetNameTooltip" String="프리셋 이름을 입력해주세요" />
+		<Translation ID="ConfirmOverwrite" String="덮어쓰기 확인" />
+		<Translation ID="Cancel" String="취소" />
+		<Translation ID="SETTINGS_LOADMOSTRECENT" String="시작 시 가장 최근의 프리셋을 자동으로 불러옵니다." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="시간 제어 기능을 활성화합니다." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="시간 제어 기능을 활성화하고 낮과 밤 슬라이더를 포함합니다." />
+		<Translation ID="SETTINGS_DESIREDKEY" String="모드 인터페이스에 액세스하기 위한 선호하는 키 조합을 선택합니다." />
+		<Translation ID="SETTINGS_DEBUGDATA" String="디버그 출력 로그에 데이터를 기록합니다." />
+		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="성능에 영향을 줄 수 있습니다." />
+	</Translations>
+</Language>

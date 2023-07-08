@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language UniqueName="pl" ReadableName="Polski" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2009/XMLSchema/XMLSchema.xsd">
+	<Translations>
+		<Translation ID="MOD_DESCRIPTION" String="Narzędzie do łatwej personalizacji wizualnej dla początkujących, poprawiające jakość wizualną miasta." />
+		<Translation ID="MOD_NAME" String="Eyecandy X" />
+		<Translation ID="AMBIENT_TAB" String="Otoczenie" />
+		<Translation ID="AMBIENT_TAB_TOOLTIP" String="W tej sekcji możesz zmieniać różne ustawienia związane z światem, takie jak czas dnia, szerokość geograficzną, długość geograficzną oraz intensywność oświetlenia słonecznego i otoczenia." />
+		<Translation ID="WEATHER_TAB" String="Pogoda" />
+		<Translation ID="WEATHER_TAB_TOOLTIP" String="W tej sekcji możesz zmieniać różne ustawienia związane z pogodą, takie jak intensywność deszczu, śniegu i mgły." />
+		<Translation ID="LUT_TAB" String="LUT" />
+		<Translation ID="LUT_TAB_TOOLTIP" String="W tej sekcji można szybko zmieniać używany LUT." />
+		<Translation ID="PRESETS_TAB" String="Ustawienia wstępne" />
+		<Translation ID="PRESETS_TAB_TOOLTIP" String="W tej sekcji możesz zapisać bieżące ustawienia jako ustawienia wstępne, wczytać wcześniej zapisane ustawienia wstępne lub zresetować wszystkie ustawienia do wartości domyślnych." />
+		<Translation ID="TIME_DAY_TEXT" String="Czas dnia" />
+		<Translation ID="DAYNIGHTCYCLE_TEXT" String="Szybkość cyklu dzień/noc" />
+		<Translation ID="LAT_TEXT" String="Szerokość geograficzna" />
+		<Translation ID="LOT_TEXT" String="Długość geograficzna" />
+		<Translation ID="SUNINTENSITY" String="Intensywność oświetlenia" />
+		<Translation ID="EXPOSURE" String="Ekspozycja" />
+		<Translation ID="TIME_DAY_TEXT_DISABLED" String="Czas dnia (wyłączony)" />
+		<Translation ID="DNC_SPEED_DISABLED" String="Cykl dzień/noc (wyłączony)" />
+		<Translation ID="SELECTLUT_TEXT" String="Wybierz LUT" />
+		<Translation ID="LOADLUT_TEXT" String="Wczytaj LUT" />
+		<Translation ID="ALREADYACTLUT_TEXT" String="Wybrane LUT jest już aktywne." />
+		<Translation ID="ENABLELUT_TEXT" String="Włącz korekcję kolorów" />
+		<Translation ID="TM_TOOLTIP_TEXT" String="Po włączeniu możliwe będzie mapowanie tonów." />
+		<Translation ID="ENABLE_TM_TEXT" String="Włącz mapowanie tonów" />
+		<Translation ID="ENABLE_BLOOM_TEXT" String="Włącz efekt flar" />
+		<Translation ID="RESET_BUTTON_TEXT" String="Resetuj" />
+		<Translation ID="RESET_VALUES_TOOLTIP" String="Zresetuj wszystkie wartości do domyślnych." />
+		<Translation ID="LUT_ALREADY_ACTIVE_NOTICE" String="Wybrane LUT jest już aktywne." />
+		<Translation ID="LOAD_LUT_SELECTED" String="Wczytaj wybrane LUT" />
+		<Translation ID="LOADPRESET_TEXT" String="Wczytaj ustawienia wstępne" />
+		<Translation ID="LOADPRESET_TOOLTIP" String="Wczytaj wybrane ustawienia wstępne." />
+		<Translation ID="DELETEPRESET_TEXT" String="Usuń ustawienia wstępne" />
+		<Translation ID="DELETEPRESET_TOOLTIP" String="Usuń bieżące wybrane ustawienia wstępne." />
+		<Translation ID="SAVEPRESET_TEXT" String="Zapisz jako nowe ustawienia wstępne" />
+		<Translation ID="SAVESETTINGS_TOOLTIP" String="Zapisz bieżące ustawienia jako nowe ustawienia wstępne." />
+		<Translation ID="OVERWRITE" String="Nadpisz" />
+		<Translation ID="OVERWRITE_TOOLTIP" String="Nadpisz istniejące ustawienia wstępne." />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT" String="Nadpisz ustawienia wstępne" />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT2" String="Czy na pewno chcesz nadpisać ustawienia wstępne?" />
+		<Translation ID="EXCEPTIONDELETEPRESET" String="Usuń ustawienia wstępne" />
+		<Translation ID="EXCEPTIONDELETEPRESET2" String="Czy na pewno chcesz usunąć ustawienia wstępne?" />
+		<Translation ID="CreateNewPreset" String="Utwórz nowe ustawienia wstępne" />
+		<Translation ID="PresetName" String="Nazwa ustawień wstępnych" />
+		<Translation ID="Create" String="Utwórz" />
+		<Translation ID="OverwritePreset" String="Nadpisz ustawienia wstępne" />
+		<Translation ID="PresetExists" String="Ustawienia wstępne już istnieją. Będą one nadpisane!" />
+		<Translation ID="PresetNameTooltip" String="Wprowadź nazwę ustawień wstępnych" />
+		<Translation ID="ConfirmOverwrite" String="Potwierdź nadpisanie" />
+		<Translation ID="Cancel" String="Anuluj" />
+		<Translation ID="SETTINGS_LOADMOSTRECENT" String="Automatyczne wczytywanie najnowszego presetu podczas uruchamiania." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="Włącz kontrolę czasu." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="Aktywuj funkcję kontroli czasu, w tym suwak czasu dnia." />
+		<Translation ID="SETTINGS_DESIREDKEY" String="Wybierz preferowane połączenie klawiszy do dostępu do interfejsu modułu." />
+		<Translation ID="SETTINGS_DEBUGDATA" String="Zapisuj dane w dzienniku debugowania." />
+		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Może wpływać na wydajność." />
+	</Translations>
+</Language>

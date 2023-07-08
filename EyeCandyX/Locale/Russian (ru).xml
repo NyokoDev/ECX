@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language UniqueName="ru" ReadableName="Русский" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2009/XMLSchema/XMLSchema.xsd">
+	<Translations>
+		<Translation ID="MOD_DESCRIPTION" String="Улучшите визуальное оформление своего города с помощью этого инструмента для начинающих по настройке визуального оформления." />
+		<Translation ID="MOD_NAME" String="Eyecandy X" />
+		<Translation ID="AMBIENT_TAB" String="Окружающая среда" />
+		<Translation ID="AMBIENT_TAB_TOOLTIP" String="В этом разделе вы можете изменить несколько настроек, связанных с миром, таких как время суток, широта, долгота, а также интенсивность солнечного и окружающего освещения." />
+		<Translation ID="WEATHER_TAB" String="Погода" />
+		<Translation ID="WEATHER_TAB_TOOLTIP" String="В этом разделе вы можете изменить несколько настроек, связанных с погодой, таких как интенсивность дождя, снега и тумана." />
+		<Translation ID="LUT_TAB" String="LUT" />
+		<Translation ID="LUT_TAB_TOOLTIP" String="В этом разделе вы можете быстро изменить используемый LUT." />
+		<Translation ID="PRESETS_TAB" String="Пресеты" />
+		<Translation ID="PRESETS_TAB_TOOLTIP" String="В этом разделе вы можете сохранить текущие настройки в качестве пресета, загрузить ранее сохраненные пресеты или сбросить все настройки на значения по умолчанию." />
+		<Translation ID="TIME_DAY_TEXT" String="Время суток" />
+		<Translation ID="DAYNIGHTCYCLE_TEXT" String="Скорость смены дня и ночи" />
+		<Translation ID="LAT_TEXT" String="Широта" />
+		<Translation ID="LOT_TEXT" String="Долгота" />
+		<Translation ID="SUNINTENSITY" String="Интенсивность окружающего освещения" />
+		<Translation ID="EXPOSURE" String="Экспозиция" />
+		<Translation ID="TIME_DAY_TEXT_DISABLED" String="Время суток (отключено)" />
+		<Translation ID="DNC_SPEED_DISABLED" String="Смена дня и ночи (отключено)" />
+		<Translation ID="SELECTLUT_TEXT" String="Выбрать LUT" />
+		<Translation ID="LOADLUT_TEXT" String="Загрузить LUT" />
+		<Translation ID="ALREADYACTLUT_TEXT" String="Выбранный LUT уже активен." />
+		<Translation ID="ENABLELUT_TEXT" String="Включить цветовую коррекцию" />
+		<Translation ID="TM_TOOLTIP_TEXT" String="Включает тональное сжатие при установке флажка." />
+		<Translation ID="ENABLE_TM_TEXT" String="Включить тональное сжатие" />
+		<Translation ID="ENABLE_BLOOM_TEXT" String="Включить эффект Bloom" />
+		<Translation ID="RESET_BUTTON_TEXT" String="Сбросить" />
+		<Translation ID="RESET_VALUES_TOOLTIP" String="Сбросить все значения на значения по умолчанию." />
+		<Translation ID="LUT_ALREADY_ACTIVE_NOTICE" String="Выбранный LUT уже активен." />
+		<Translation ID="LOAD_LUT_SELECTED" String="Загрузить выбранный LUT." />
+		<Translation ID="LOADPRESET_TEXT" String="ЗАГРУЗИТЬ ПРЕСЕТ" />
+		<Translation ID="LOADPRESET_TOOLTIP" String="Загрузить выбранный пресет." />
+		<Translation ID="DELETEPRESET_TEXT" String="Удалить пресет." />
+		<Translation ID="DELETEPRESET_TOOLTIP" String="Удалить текущий выбранный пресет." />
+		<Translation ID="SAVEPRESET_TEXT" String="Сохранить как новый пресет." />
+		<Translation ID="SAVESETTINGS_TOOLTIP" String="Сохранить текущие настройки как новый пресет." />
+		<Translation ID="OVERWRITE" String="Перезаписать" />
+		<Translation ID="OVERWRITE_TOOLTIP" String="Перезаписать существующий пресет." />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT" String="Перезаписать пресет" />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT2" String="Вы уверены, что хотите перезаписать пресет" />
+		<Translation ID="EXCEPTIONDELETEPRESET" String="Удалить пресет" />
+		<Translation ID="EXCEPTIONDELETEPRESET2" String="Вы уверены, что хотите удалить пресет" />
+		<Translation ID="CreateNewPreset" String="Создать новый пресет" />
+		<Translation ID="PresetName" String="Имя пресета" />
+		<Translation ID="Create" String="Создать" />
+		<Translation ID="OverwritePreset" String="Перезаписать пресет" />
+		<Translation ID="PresetExists" String="Пресет уже существует: он будет перезаписан!" />
+		<Translation ID="PresetNameTooltip" String="Пожалуйста, введите имя пресета" />
+		<Translation ID="ConfirmOverwrite" String="Подтвердить перезапись" />
+		<Translation ID="Cancel" String="Отмена" />
+		<Translation ID="SETTINGS_LOADMOSTRECENT" String="Carregar automaticamente o preset mais recente ao iniciar." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="Ativar controle de tempo." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="Ativar a funcionalidade de controle de tempo, incluindo o controle deslizante de hora do dia." />
+		<Translation ID="SETTINGS_DESIREDKEY" String="Selecionar a combinação de teclas preferida para acessar a interface do mod." />
+		<Translation ID="SETTINGS_DEBUGDATA" String="Registrar dados no log de saída de depuração." />
+		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Pode afetar o desempenho." />
+	</Translations>
+</Language>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language UniqueName="en" ReadableName="English" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2009/XMLSchema/XMLSchema.xsd">
+	<Translations>
+		<Translation ID="MOD_DESCRIPTION" String="Enhance your city's visuals with this beginner-friendly visual customization tool." />
+		<Translation ID="MOD_NAME" String="Eyecandy X" />
+		<Translation ID="AMBIENT_TAB" String="Ambient" />
+		<Translation ID="AMBIENT_TAB_TOOLTIP" String="In this section you can change several world-related settings such as Time of Day, latitude, longitude and sun and ambient light intensity." />
+		<Translation ID="WEATHER_TAB" String="Weather" />
+		<Translation ID="WEATHER_TAB_TOOLTIP" String="In this section you can change several weather-related settings such as rain, snow and fog intensity." />
+		<Translation ID="LUT_TAB" String="LUT" />
+		<Translation ID="LUT_TAB_TOOLTIP" String="In this section you can quickly change the LUT you want to use." />
+		<Translation ID="PRESETS_TAB" String="Presets" />
+		<Translation ID="PRESETS_TAB_TOOLTIP" String="In this section you can save your current settings as a Preset, load previously saved Presets, or reset everything to default." />
+		<Translation ID="TIME_DAY_TEXT" String="Time of Day" />
+		<Translation ID="DAYNIGHTCYCLE_TEXT" String="Day/Night cycle speed" />
+		<Translation ID="LAT_TEXT" String="Latitude" />
+		<Translation ID="LOT_TEXT" String="Longitude" />
+		<Translation ID="SUNINTENSITY" String="Ambient Light Intensity" />
+		<Translation ID="EXPOSURE" String="Exposure" />
+		<Translation ID="TIME_DAY_TEXT_DISABLED" String="Time of Day (Deactivated)" />
+		<Translation ID="DNC_SPEED_DISABLED" String="Day/Night Cycle (Deactivated)" />
+		<Translation ID="SELECTLUT_TEXT" String="Select LUT" />
+		<Translation ID="LOADLUT_TEXT" String="Load LUT" />
+		<Translation ID="ALREADYACTLUT_TEXT" String="LUT selected in list is already active." />
+		<Translation ID="ENABLELUT_TEXT" String="Enable Color Correction" />
+		<Translation ID="TM_TOOLTIP_TEXT" String="Enables tonemapping when checked." />
+		<Translation ID="ENABLE_TM_TEXT" String="Enable Tonemapping" />
+		<Translation ID="ENABLE_BLOOM_TEXT" String="Enable Bloom" />
+		<Translation ID="RESET_BUTTON_TEXT" String="Reset" />
+		<Translation ID="RESET_VALUES_TOOLTIP" String="Reset all values to default." />
+		<Translation ID="LUT_ALREADY_ACTIVE_NOTICE" String="LUT selected in list is already active." />
+		<Translation ID="LOAD_LUT_SELECTED" String="Load the LUT selected." />
+		<Translation ID="LOADPRESET_TEXT" String="LOAD PRESET" />
+		<Translation ID="LOADPRESET_TOOLTIP" String="Load selected preset." />
+		<Translation ID="DELETEPRESET_TEXT" String="Delete preset." />
+		<Translation ID="DELETEPRESET_TOOLTIP" String="Delete currently selected preset." />
+		<Translation ID="SAVEPRESET_TEXT" String="Save as new preset." />
+		<Translation ID="SAVESETTINGS_TOOLTIP" String="Save current settings as new preset." />
+		<Translation ID="OVERWRITE" String="Overwrite" />
+		<Translation ID="OVERWRITE_TOOLTIP" String="Overwrite existing preset." />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT" String="Overwrite Preset" />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT2" String="Are you sure you want to overwrite Preset" />
+		<Translation ID="EXCEPTIONDELETEPRESET" String="Delete Preset" />
+		<Translation ID="EXCEPTIONDELETEPRESET2" String="Are you sure you want to delete preset" />
+		<Translation ID="CreateNewPreset" String="Create New Preset" />
+		<Translation ID="PresetName" String="Preset Name" />
+		<Translation ID="Create" String="Create" />
+		<Translation ID="OverwritePreset" String="Overwrite Preset" />
+		<Translation ID="PresetExists" String="Preset already exists: it will be overwritten!" />
+		<Translation ID="PresetNameTooltip" String="Please enter a Preset name" />
+		<Translation ID="ConfirmOverwrite" String="Confirm Overwrite" />
+		<Translation ID="Cancel" String="Cancel" />
+		<Translation ID="SETTINGS_LOADMOSTRECENT" String="Automatically load the most recent preset upon startup." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="Enable time control." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="Activate time control functionality, including the time of day slider." />
+		<Translation ID="SETTINGS_DESIREDKEY" String="Select your preferred key combination for accessing the mod interface." />
+		<Translation ID="SETTINGS_DEBUGDATA" String="Record data in the debug output log." />
+		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="May impact performance." />
+	</Translations>
+</Language>

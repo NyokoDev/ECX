@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5331212A-01C2-400F-92A7-C60E29FAC8A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyeCandyX</RootNamespace>
+    <AssemblyName>EyecandyX</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ColossalManaged">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\ColossalManaged.dll</HintPath>
+    </Reference>
+    <Reference Include="ICities">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\ICities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnifiedUILib, Version=2.2.12.31246, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UnifiedUILib.2.2.12\lib\net35\UnifiedUILib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DebugUtils.cs" />
+    <Compile Include="GUI\ColorData.cs" />
+    <Compile Include="GUI\AmbientPanel.cs" />
+    <Compile Include="GUI\ColorManagementPanel.cs" />
+    <Compile Include="GUI\PresetsPanel.cs" />
+    <Compile Include="GUI\UIFastList.cs" />
+    <Compile Include="GUI\UILutItem.cs" />
+    <Compile Include="Locale\TranslationID.cs" />
+    <Compile Include="TranslationFramework\TranslationUtil.cs" />
+    <Compile Include="TranslationFramework\TranslatableAttribute.cs" />
+    <Compile Include="TranslationFramework\Translation.cs" />
+    <Compile Include="TranslationFramework\Language.cs" />
+    <Compile Include="GUI\UIMainButton.cs" />
+    <Compile Include="GUI\UIModalTitleBar.cs" />
+    <Compile Include="GUI\UIPresetItem.cs" />
+    <Compile Include="GUI\WeatherPanel.cs" />
+    <Compile Include="GUI\UINewPresetModal.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="InputUtils.cs" />
+    <Compile Include="LoadingExtension.cs" />
+    <Compile Include="ModCompatibilityHelper.cs" />
+    <Compile Include="Mod.cs" />
+    <Compile Include="ThreadingExtension.cs" />
+    <Compile Include="DayNightCycleManager.cs" />
+    <Compile Include="UltimateEyecandyTool.cs" />
+    <Compile Include="GUI\UIMainPanel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\UIMainTitleBar.cs" />
+    <Compile Include="GUI\UIutils.cs" />
+    <Compile Include="Fraction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Icon2.png" />
+    <EmbeddedResource Include="Assets\ToolbarIcon.png" />
+    <Content Include="Locale\Korean %28ko%29.xml" />
+    <Content Include="Locale\Russian %28ru%29.xml" />
+    <Content Include="Locale\Portuguese %28pt-BR%29 .xml" />
+    <Content Include="Locale\Polish %28pl%29.xml" />
+    <Content Include="Locale\German %28de%29.xml" />
+    <Content Include="Locale\French %28fr%29.xml" />
+    <Content Include="Locale\Chinese %28zh-CN%29.xml" />
+    <Content Include="Locale\Spanish %28ES%29.xml" />
+    <Content Include="Locale\English %28EN%29.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "%25LOCALAPPDATA%25\Colossal Order\Cities_Skylines\Addons\Mods\$(ProjectName)"
+del "%25LOCALAPPDATA%25\Colossal Order\Cities_Skylines\Addons\Mods\$(ProjectName)\$(TargetFileName)"
+xcopy /y "$(TargetPath)" "%25LOCALAPPDATA%25\Colossal Order\Cities_Skylines\Addons\Mods\$(ProjectName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

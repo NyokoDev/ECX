@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language UniqueName="zh-CN" ReadableName="中文（简体）" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2009/XMLSchema/XMLSchema.xsd">
+	<Translations>
+		<Translation ID="MOD_DESCRIPTION" String="使用这个适合初学者的视觉定制工具来增强你的城市的视觉效果。" />
+		<Translation ID="MOD_NAME" String="Eyecandy X" />
+		<Translation ID="AMBIENT_TAB" String="环境" />
+		<Translation ID="AMBIENT_TAB_TOOLTIP" String="在此部分，您可以更改一些与世界相关的设置，如白天时间、纬度、经度以及太阳和环境光的强度。" />
+		<Translation ID="WEATHER_TAB" String="天气" />
+		<Translation ID="WEATHER_TAB_TOOLTIP" String="在此部分，您可以更改一些与天气相关的设置，如雨、雪和雾的强度。" />
+		<Translation ID="LUT_TAB" String="LUT" />
+		<Translation ID="LUT_TAB_TOOLTIP" String="在此部分，您可以快速更改要使用的LUT。" />
+		<Translation ID="PRESETS_TAB" String="预设" />
+		<Translation ID="PRESETS_TAB_TOOLTIP" String="在此部分，您可以将当前设置保存为预设，加载先前保存的预设或将所有设置重置为默认值。" />
+		<Translation ID="TIME_DAY_TEXT" String="白天时间" />
+		<Translation ID="DAYNIGHTCYCLE_TEXT" String="昼夜循环速度" />
+		<Translation ID="LAT_TEXT" String="纬度" />
+		<Translation ID="LOT_TEXT" String="经度" />
+		<Translation ID="SUNINTENSITY" String="环境光强度" />
+		<Translation ID="EXPOSURE" String="曝光" />
+		<Translation ID="TIME_DAY_TEXT_DISABLED" String="白天时间（已停用）" />
+		<Translation ID="DNC_SPEED_DISABLED" String="昼夜循环（已停用）" />
+		<Translation ID="SELECTLUT_TEXT" String="选择 LUT" />
+		<Translation ID="LOADLUT_TEXT" String="加载 LUT" />
+		<Translation ID="ALREADYACTLUT_TEXT" String="列表中选择的LUT已处于活动状态。" />
+		<Translation ID="ENABLELUT_TEXT" String="启用颜色校正" />
+		<Translation ID="TM_TOOLTIP_TEXT" String="勾选后启用色调映射。" />
+		<Translation ID="ENABLE_TM_TEXT" String="启用色调映射" />
+		<Translation ID="ENABLE_BLOOM_TEXT" String="启用泛光" />
+		<Translation ID="RESET_BUTTON_TEXT" String="重置" />
+		<Translation ID="RESET_VALUES_TOOLTIP" String="将所有值重置为默认值。" />
+		<Translation ID="LUT_ALREADY_ACTIVE_NOTICE" String="列表中选择的LUT已处于活动状态。" />
+		<Translation ID="LOAD_LUT_SELECTED" String="加载所选的LUT。" />
+		<Translation ID="LOADPRESET_TEXT" String="加载预设" />
+		<Translation ID="LOADPRESET_TOOLTIP" String="加载所选的预设。" />
+		<Translation ID="DELETEPRESET_TEXT" String="删除预设" />
+		<Translation ID="DELETEPRESET_TOOLTIP" String="删除当前选择的预设。" />
+		<Translation ID="SAVEPRESET_TEXT" String="保存为新预设" />
+		<Translation ID="SAVESETTINGS_TOOLTIP" String="将当前设置保存为新预设。" />
+		<Translation ID="OVERWRITE" String="覆盖" />
+		<Translation ID="OVERWRITE_TOOLTIP" String="覆盖现有的预设。" />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT" String="覆盖预设" />
+		<Translation ID="EXCEPTIONOVERWRITE_TEXT2" String="您确定要覆盖预设吗？" />
+		<Translation ID="EXCEPTIONDELETEPRESET" String="删除预设" />
+		<Translation ID="EXCEPTIONDELETEPRESET2" String="您确定要删除预设吗？" />
+		<Translation ID="CreateNewPreset" String="创建新预设" />
+		<Translation ID="PresetName" String="预设名称" />
+		<Translation ID="Create" String="创建" />
+		<Translation ID="OverwritePreset" String="覆盖预设" />
+		<Translation ID="PresetExists" String="预设已存在：将被覆盖！" />
+		<Translation ID="PresetNameTooltip" String="请输入预设名称" />
+		<Translation ID="ConfirmOverwrite" String="确认覆盖" />
+		<Translation ID="Cancel" String="取消" />
+		<Translation ID="SETTINGS_LOADMOSTRECENT" String="启动时自动加载最近的预设。" />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="启用时间控制。" />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="激活时间控制功能，包括日夜滑块。" />
+		<Translation ID="SETTINGS_DESIREDKEY" String="选择您偏好的键盘组合以访问模组界面。" />
+		<Translation ID="SETTINGS_DEBUGDATA" String="记录调试输出日志中的数据。" />
+		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="可能会影响性能。" />
+	</Translations>
+</Language>
