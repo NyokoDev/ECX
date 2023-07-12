@@ -6,12 +6,10 @@ using UnityEngine;
 
 namespace CompCheck
 {
-
     public class CompatibilityHelper
     {
         private static string steamAppsFolder;
 
-    
         static CompatibilityHelper()
         {
             try
@@ -275,7 +273,6 @@ namespace CompCheck
             }
         }
 
-
         public static void ShowInstalledVisualMods()
         {
             StringBuilder messageBuilder = new StringBuilder();
@@ -331,16 +328,8 @@ namespace CompCheck
                 messageBuilder.AppendLine("- UnifiedUI");
             }
 
-            // Get GPU RAM information
-           
-
-          
-
             string logFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ECX.ecx");
             File.WriteAllText(logFilePath, messageBuilder.ToString());
-
-
         }
     }
 }
-

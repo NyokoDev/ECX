@@ -38,7 +38,7 @@ namespace EyeCandyX.GUI
             // Create custom atlas:
             if (toggleButtonAtlas == null)
             {
-                toggleButtonAtlas = UIUtils.CreateAtlas(UE, buttonSize, buttonSize, "Icon.png", new[]
+                toggleButtonAtlas = UIUtils.CreateAtlas(UE, buttonSize, buttonSize, "ToolbarIcon.png", new[]
                 {
                                                 "EyecandyNormalBg",
                                                 "EyecandyHoveredBg",

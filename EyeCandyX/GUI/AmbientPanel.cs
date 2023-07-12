@@ -24,51 +24,48 @@ namespace EyeCandyX.GUI
         private UISlider _intensitySlider;
         private UILabel _ambientLabel;
         private UISlider _ambientSlider;
-
-        //private UILabel _sizeLabel;
-        //private UISlider _sizeSlider;
-        //private UILabel _fovLabel;
-        //private UISlider _fovSlider;
+        private UILabel _gameSpeedLabel;
+        private UISlider _gameSpeedSlider;
 
         private UIButton _resetAmbientButton;
 
         public UISlider todSlider
         {
             get { return _todSlider; }
-            set { _todSlider = this.todSlider; }
+            set { _todSlider = value; }
         }
+
         public UISlider speedSlider
         {
             get { return _speedSlider; }
-            set { _speedSlider = this.speedSlider; }
+            set { _speedSlider = value; }
         }
+
         public UISlider heightSlider
         {
             get { return _heightSlider; }
-            set { _heightSlider = this.heightSlider; }
+            set { _heightSlider = value; }
         }
+
         public UISlider rotationSlider
         {
             get { return _rotationSlider; }
         }
+
         public UISlider intensitySlider
         {
             get { return _intensitySlider; }
         }
+
         public UISlider ambientSlider
         {
             get { return _ambientSlider; }
         }
 
-        //public UISlider sizeSlider
-        //{
-        //    get { return _sizeSlider; }
-        //    set { _sizeSlider = this.sizeSlider; }
-        //}
-        //public UISlider fovSlider
-        //{
-        //    get { return _fovSlider; }
-        //}
+        public UISlider gameSpeedSlider
+        {
+            get { return _gameSpeedSlider; }
+        }
 
         private DayNightCycleManager _todManager;
         public DayNightCycleManager todManager
@@ -118,7 +115,6 @@ namespace EyeCandyX.GUI
         private void SetupControls()
         {
             // Time of Day:
-            
             {
                 var topContainer = UIUtils.CreateFormElement(this, "top");
                 topContainer.name = "heightSliderContainer";
@@ -203,11 +199,25 @@ namespace EyeCandyX.GUI
             _ambientSlider.value = EyeCandyXTool.currentSettings.ambient_ambient;
             _ambientSlider.eventValueChanged += ValueChanged;
 
+            // Game Speed:
+            var gameSpeedContainer = UIUtils.CreateFormElement(this, "center");
+            gameSpeedContainer.name = "gameSpeedContainer";
+            gameSpeedContainer.relativePosition = new Vector3(0, 420);
+            _gameSpeedLabel = gameSpeedContainer.AddUIComponent<UILabel>();
+            _gameSpeedLabel.text = "Game Speed (0)";
+            _gameSpeedLabel.textScale = 0.9f;
+            _gameSpeedLabel.padding = new RectOffset(0, 0, 0, 0);
+            _gameSpeedSlider = UIUtils.CreateSlider(gameSpeedContainer, 0f, 2f);
+            _gameSpeedSlider.name = "gameSpeedSlider";
+            _gameSpeedSlider.stepSize = 0.01f;
+            _gameSpeedSlider.value = Time.timeScale;
+            _gameSpeedSlider.eventValueChanged += ValueChanged;
+
             // Reset button:
             var resetContainer = UIUtils.CreateFormElement(this, "bottom");
             _resetAmbientButton = UIUtils.CreateButton(resetContainer);
             _resetAmbientButton.name = "resetButton";
-            _resetAmbientButton.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.RESET_BUTTON_TEXT); 
+            _resetAmbientButton.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.RESET_BUTTON_TEXT);
             _resetAmbientButton.tooltip = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.RESET_VALUES_TOOLTIP);
             _resetAmbientButton.eventClicked += (c, e) =>
             {
@@ -219,8 +229,10 @@ namespace EyeCandyX.GUI
                 _rotationSlider.value = 98f;
                 _intensitySlider.value = 6f;
                 _ambientSlider.value = EyeCandyXTool.isWinterMap ? 0.4f : 0.71f;
+                _gameSpeedSlider.value = 1f;
+                Time.timeScale = 1f;
+                _gameSpeedLabel.text = "Game Speed (1)";
             };
-
         }
 
         void ValueChanged(UIComponent trigger, float value)
@@ -229,51 +241,44 @@ namespace EyeCandyX.GUI
             {
                 DebugUtils.Log($"AmbientPanel: Slider {trigger.name} = {value}");
             }
-            //  
+
             if (trigger == _todSlider)
             {
                 _todManager.TimeOfDay = value;
             }
-            if (trigger == _speedSlider)
+            else if (trigger == _speedSlider)
             {
-                _todManager.speed = speeds[(uint)value];
+                _todManager.speed = speeds[(int)value];
             }
-            if (trigger == _heightSlider)
+            else if (trigger == _heightSlider)
             {
                 DayNightProperties.instance.m_Latitude = value;
                 EyeCandyXTool.currentSettings.ambient_height = value;
                 _heightLabel.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.LAT_TEXT) + "(" + value.ToString() + ")";
             }
-            if (trigger == _rotationSlider)
+            else if (trigger == _rotationSlider)
             {
                 DayNightProperties.instance.m_Longitude = value;
                 EyeCandyXTool.currentSettings.ambient_rotation = value;
                 _rotationLabel.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.LOT_TEXT) + "(" + value.ToString() + ")";
             }
-            if (trigger == _intensitySlider)
+            else if (trigger == _intensitySlider)
             {
                 DayNightProperties.instance.m_SunIntensity = value;
                 EyeCandyXTool.currentSettings.ambient_intensity = value;
                 _intensityLabel.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.SUNINTENSITY) + "(" + value.ToString() + ")";
             }
-            if (trigger == _ambientSlider)
+            else if (trigger == _ambientSlider)
             {
                 DayNightProperties.instance.m_Exposure = value;
                 EyeCandyXTool.currentSettings.ambient_ambient = value;
                 _ambientLabel.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.EXPOSURE) + "(" + value.ToString() + ")";
             }
-
-            //if (trigger == _sizeSlider)
-            //{
-            //    DayNightProperties.instance.m_SunSize = value;
-            //    EyeCandyXTool.currentSettings.ambient_size = value;
-            //    _sizeLabel.text = "Sun size (" + value.ToString() + ")";
-            //}
-            //if (trigger == _fovSlider)
-            //{
-            //    Camera.main.fieldOfView = value;
-            //    _fovLabel.text = "Field of View (" + value.ToString() + ")";
-            //}
+            else if (trigger == _gameSpeedSlider)
+            {
+                Time.timeScale = value;
+                _gameSpeedLabel.text = "Game Speed (" + value.ToString() + ")";
+            }
         }
 
         void timeSlider_eventDragEnd(UIComponent trigger, UIMouseEventParameter eventParam)
