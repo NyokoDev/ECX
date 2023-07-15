@@ -62,12 +62,12 @@ namespace EyeCandyX.GUI
             m_title.width = UIUtils.c_titleBarLabelWidth;
             m_title.relativePosition = new Vector3(UIUtils.c_titleBarLabelXPos, 13);
             m_title.text = "Eyecandy X";
-            m_title.textScale = 0.9f;
+            m_title.textScale = 1.1f;
             m_title.isInteractive = false;
 
             m_close = AddUIComponent<UIButton>();
-            m_close.size = new Vector2(17, 17);
-            m_close.relativePosition = new Vector3(UIUtils.c_titleBarCloseButtonXPos, 12);
+            m_close.size = new Vector2(30, 30);
+            m_close.relativePosition = new Vector3(UIUtils.c_titleBarCloseButtonXPos, 5);
             m_close.normalBgSprite = "buttonclose";
             m_close.hoveredBgSprite = "buttonclosehovered";
             m_close.pressedBgSprite = "buttonclosepressed";

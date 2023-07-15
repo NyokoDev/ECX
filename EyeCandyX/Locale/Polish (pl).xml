@@ -56,5 +56,6 @@
 		<Translation ID="SETTINGS_DESIREDKEY" String="Wybierz preferowane połączenie klawiszy do dostępu do interfejsu modułu." />
 		<Translation ID="SETTINGS_DEBUGDATA" String="Zapisuj dane w dzienniku debugowania." />
 		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Może wpływać na wydajność." />
+		<Translation ID="GAMESPEED" String="Prędkość gry" />
 	</Translations>
 </Language>

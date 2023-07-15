@@ -6,7 +6,7 @@ namespace EyeCandyX
 {
     class DebugUtils
     {
-        public const string modPrefix = "[Eyecandy X " + Mod.version + "] ";
+        public const string modPrefix = "[Eyecandy X " + EyecandyXMod.version + "] ";
 
         public static void Message(string message)
         {

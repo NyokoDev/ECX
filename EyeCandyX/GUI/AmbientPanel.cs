@@ -130,7 +130,7 @@ namespace EyeCandyX.GUI
                 _todSlider.eventMouseUp += timeSlider_eventDragEnd;
             }
 
-            // Simulation speed:
+            // day night cycle speed:
             var speedContainer = UIUtils.CreateFormElement(this, "center");
             speedContainer.name = "sizeContainer";
             speedContainer.relativePosition = new Vector3(0, 95);
@@ -245,10 +245,12 @@ namespace EyeCandyX.GUI
             if (trigger == _todSlider)
             {
                 _todManager.TimeOfDay = value;
+                
             }
             else if (trigger == _speedSlider)
             {
                 _todManager.speed = speeds[(int)value];
+                _speedLabel.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.DAYNIGHTCYCLE_TEXT) + "(" + value.ToString() + ")";
             }
             else if (trigger == _heightSlider)
             {
@@ -277,7 +279,7 @@ namespace EyeCandyX.GUI
             else if (trigger == _gameSpeedSlider)
             {
                 Time.timeScale = value;
-                _gameSpeedLabel.text = "Game Speed (" + value.ToString() + ")";
+                _gameSpeedLabel.text = Translation.Instance.GetTranslation(EyecandyX.Locale.TranslationID.GAMESPEED) + "(" + value.ToString() + ")";
             }
         }
 

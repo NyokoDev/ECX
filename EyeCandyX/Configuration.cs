@@ -141,7 +141,7 @@ namespace EyeCandyX
                 var xmlSerializer = new XmlSerializer(typeof(Configuration));
                 using (var streamWriter = new StreamWriter(fileName))
                 {
-                    EyeCandyXTool.config.version = Mod.version;
+                    EyeCandyXTool.config.version = EyecandyXMod.version;
 
                     var configCopy = new Configuration();
                     configCopy.version = EyeCandyXTool.config.version;
@@ -189,6 +189,7 @@ namespace EyeCandyX
                     {
                         DebugUtils.Log("Configuration saved.");
                     }
+
                 }
             }
             catch (Exception e)

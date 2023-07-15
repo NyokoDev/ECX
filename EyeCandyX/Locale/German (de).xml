@@ -56,5 +56,6 @@
 		<Translation ID="SETTINGS_DESIREDKEY" String="Wählen Sie Ihre bevorzugte Tastenkombination zum Zugriff auf die Mod-Schnittstelle." />
 		<Translation ID="SETTINGS_DEBUGDATA" String="Daten im Debug-Ausgabeprotokoll aufzeichnen." />
 		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Kann die Leistung beeinträchtigen." />
+		<Translation ID="GAMESPEED" String="Spielgeschwindigkeit" />
 	</Translations>
 </Language>

@@ -12,21 +12,22 @@ using static ColossalFramework.Plugins.PluginManager;
 using System.IO;
 using Debug = UnityEngine.Debug;
 using ColossalFramework.PlatformServices;
+using UnifiedUI;
 using UnifiedUI.Helpers;
 using ColossalFramework;
 using System.Collections.Generic;
+using EyeCandyX.GUI;
+using ToggleKey;
+using System.Reflection;
 
 namespace EyeCandyX
 {
-    public class Mod : IUserMod
+    public class EyecandyXMod : IUserMod
     {
         public string Name => Translation.Instance.GetTranslation(TranslationID.MOD_NAME);
-
         public string Description => Translation.Instance.GetTranslation(TranslationID.MOD_DESCRIPTION);
-
         public const string version = "1.2";
-
-
+        internal UUICustomButton _uuiButton;
 
 
         // Mod options:
@@ -118,37 +119,51 @@ namespace EyeCandyX
             }
         }
     }
-    public class ECXTool : ToolBase
+
+    internal sealed class UUI
     {
+        internal static EyecandyXMod Instance => ecx_instance;
+        public static EyecandyXMod ecx_instance;
         UILabel label_;
         UIComponent button_;
 
-        
-        protected override void Awake()
+        internal static void OnLoad()
         {
             try
             {
-                base.Awake();
-                string spritePath = UUIHelpers.GetFullPath<Mod>("Assets", "Icon2.png");
-                Debug.Log("EYECANDYX - UUI -Sprite path: " + spritePath);
-                Texture2D icon = UUIHelpers.LoadTexture(spritePath);
-                var hotkeys = new UUIHotKeys();
-                button_ = UUIHelpers.RegisterToolButton(
-                    name: "EyecandyX",
-                    groupName: null, // default group
-                    tooltip: "Eyecandy X",
-                    spritefile: spritePath,
-                    tool: this,
-                    activationKey: hotkeys.ActivationKey,
-                    activeKeys: hotkeys.InToolKeys);
+                if (ecx_instance == null)
+                {
+                    ecx_instance = new EyecandyXMod();
+
+                    ecx_instance._uuiButton = UUIHelpers.RegisterCustomButton(
+                        name: ecx_instance.Name,
+                        groupName: null, // default group
+                        tooltip: ecx_instance.Name,
+                        icon: UUIHelpers.LoadTexture(UUIHelpers.GetFullPath<EyecandyXMod>("Assets", "Icon2.png")),
+                        onToggle: (value) =>
+                        {
+                            try
+                            {
+                                if (value)
+                                {
+                                    UIMainPanel.instance.Toggle();
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                Debug.Log("Exception caught while toggling UIMainPanel: " + ex.Message);
+                            }
+                        },
+                        hotkeys: new UUIHotKeys { ActivationKey = InputUtils.ToggleKey });
+                }
             }
             catch (Exception ex)
             {
-                Debug.LogException(ex);
-                UIView.ForwardException(ex);
+                Debug.Log("Exception caught during UUI OnLoad: " + ex.Message);
             }
         }
     }
 }
 
 
+    

@@ -57,5 +57,6 @@
         public const string SETTINGS_DESIREDKEY = "SETTINGS_DESIREDKEY"; // //Choose your desired key combination for activating the mod interface.
         public const string SETTINGS_DEBUGDATA = "SETTINGS_DEBUGDATA"; // Write data to debug output log.
         public const string SETTINGS_DEBUGDATA_TOOLTIP = "SETTINGS_DEBUGDATA_TOOLTIP"; // Write data to debug output log.
+        public const string GAMESPEED = "GAMESPEED";
     }
 }

@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ToggleKey.cs" />
     <Compile Include="DebugUtils.cs" />
     <Compile Include="GUI\ColorData.cs" />
     <Compile Include="GUI\AmbientPanel.cs" />

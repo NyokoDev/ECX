@@ -37,6 +37,7 @@ namespace EyeCandyX.GUI
             canFocus = true;
             isInteractive = true;
             name = "modMainPanel";
+            opacity = 0.8f;
             padding = new RectOffset(10, 10, 4, 4);
             width = UIUtils.c_modPanelWidth;
             height = UIUtils.c_modPanelHeight;

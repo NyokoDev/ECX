@@ -56,5 +56,6 @@
 		<Translation ID="SETTINGS_DESIREDKEY" String="Sélectionnez votre combinaison de touches préférée pour accéder à l'interface du mod." />
 		<Translation ID="SETTINGS_DEBUGDATA" String="Enregistrer des données dans le journal de sortie de débogage." />
 		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Peut affecter les performances." />
+		<Translation ID="GAMESPEED" String="Vitesse de jeu" />
 	</Translations>
 </Language>

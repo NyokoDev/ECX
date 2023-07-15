@@ -56,5 +56,6 @@
 		<Translation ID="SETTINGS_DESIREDKEY" String="选择您偏好的键盘组合以访问模组界面。" />
 		<Translation ID="SETTINGS_DEBUGDATA" String="记录调试输出日志中的数据。" />
 		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="可能会影响性能。" />
+		<Translation ID="GAMESPEED" String="游戏速度" />
 	</Translations>
 </Language>

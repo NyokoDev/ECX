@@ -56,5 +56,6 @@
 		<Translation ID="SETTINGS_DESIREDKEY" String="Seleccionar tu combinación preferida de teclas para acceder a la interfaz del mod." />
 		<Translation ID="SETTINGS_DEBUGDATA" String="Registrar datos en el registro de salida de depuración." />
 		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Puede afectar el rendimiento." />
+		<Translation ID="GAMESPEED" String="Velocidad del juego" />
 	</Translations>
 </Language>

@@ -56,5 +56,6 @@
 		<Translation ID="SETTINGS_DESIREDKEY" String="Select your preferred key combination for accessing the mod interface." />
 		<Translation ID="SETTINGS_DEBUGDATA" String="Record data in the debug output log." />
 		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="May impact performance." />
+		<Translation ID="GAMESPEED" String ="Game Speed" />
 	</Translations>
 </Language>

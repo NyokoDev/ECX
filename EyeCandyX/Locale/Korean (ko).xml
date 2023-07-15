@@ -56,5 +56,6 @@
 		<Translation ID="SETTINGS_DESIREDKEY" String="모드 인터페이스에 액세스하기 위한 선호하는 키 조합을 선택합니다." />
 		<Translation ID="SETTINGS_DEBUGDATA" String="디버그 출력 로그에 데이터를 기록합니다." />
 		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="성능에 영향을 줄 수 있습니다." />
+		<Translation ID="GAMESPEED" String="게임 속도" />
 	</Translations>
 </Language>

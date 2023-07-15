@@ -21,7 +21,7 @@ namespace EyecandyX.TranslationFramework
                     try
                     {
                         var instances = item.GetInstances<IUserMod>();
-                        if (!(instances.FirstOrDefault() is Mod))
+                        if (!(instances.FirstOrDefault() is EyecandyXMod))
                             continue;
 
                         return item;
