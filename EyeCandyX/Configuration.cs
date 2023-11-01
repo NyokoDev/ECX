@@ -83,6 +83,10 @@ namespace EyeCandyX
             [XmlElement("color_bloom")]
             public bool color_bloom = true;
 
+            [XmlElement("SimulationSpeed")]
+            public float customTimeScale;
+
+
             public Preset(string name)
             {
                 this.name = name;
@@ -104,6 +108,7 @@ namespace EyeCandyX
                 color_lut = builtInPreset.color_lut;
                 color_tonemapping = builtInPreset.color_tonemapping;
                 color_bloom = builtInPreset.color_bloom;
+                customTimeScale = builtInPreset.customTimeScale;
             }
 
             public Preset()
@@ -151,6 +156,8 @@ namespace EyeCandyX
                     configCopy.enableSimulationControl = EyeCandyXTool.config.enableSimulationControl;
                     configCopy.loadLastPresetOnStart = EyeCandyXTool.config.loadLastPresetOnStart;
                     configCopy.lastPreset = EyeCandyXTool.config.lastPreset;
+                  
+
 
                     foreach (var preset in EyeCandyXTool.config.presets)
                     {

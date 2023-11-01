@@ -95,75 +95,22 @@ namespace EyeCandyX
 
                 group.AddSpace(15);
 
-                // Open File Location Button:
-                UIButton openLocationButton = (UIButton)group.AddButton("Open File Location", OnOpenLocationButtonClick);
-                openLocationButton.tooltip = "Open the file location of ECX.ecx";
+               
+              
             }
             catch (Exception e)
             {
                 DebugUtils.LogException(e);
             }
         }
-
-        private void OnOpenLocationButtonClick()
-        {
-            string logFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ECX.ecx");
-            if (File.Exists(logFilePath))
-            {
-                string directoryPath = Path.GetDirectoryName(logFilePath);
-                Process.Start("explorer.exe", directoryPath);
-            }
-            else
-            {
-                Debug.Log("The file does not exist.");
-            }
-        }
-    }
-
-    internal sealed class UUI
-    {
-        internal static EyecandyXMod Instance => ecx_instance;
-        public static EyecandyXMod ecx_instance;
-        UILabel label_;
-        UIComponent button_;
-
-        internal static void OnLoad()
-        {
-            try
-            {
-                if (ecx_instance == null)
-                {
-                    ecx_instance = new EyecandyXMod();
-
-                    ecx_instance._uuiButton = UUIHelpers.RegisterCustomButton(
-                        name: ecx_instance.Name,
-                        groupName: null, // default group
-                        tooltip: ecx_instance.Name,
-                        icon: UUIHelpers.LoadTexture(UUIHelpers.GetFullPath<EyecandyXMod>("Assets", "Icon2.png")),
-                        onToggle: (value) =>
-                        {
-                            try
-                            {
-                                if (value)
-                                {
-                                    UIMainPanel.instance.Toggle();
-                                }
-                            }
-                            catch (Exception ex)
-                            {
-                                Debug.Log("Exception caught while toggling UIMainPanel: " + ex.Message);
-                            }
-                        },
-                        hotkeys: new UUIHotKeys { ActivationKey = InputUtils.ToggleKey });
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.Log("Exception caught during UUI OnLoad: " + ex.Message);
-            }
-        }
     }
 }
+
+
+    
+        
+    
+
 
 
     

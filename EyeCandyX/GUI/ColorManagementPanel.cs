@@ -304,11 +304,6 @@ namespace EyeCandyX.GUI
             //  
             foreach (var lut in ColorCorrectionManager.instance.items)
             {
-                //  Skip local Luts:
-                if (!Regex.IsMatch(lut, "^[0-9]{9}.") && !vanillaLuts.Contains(lut))
-                {
-                    continue;
-                }
                 Lut l = new Lut()
                 {
                     index = i,

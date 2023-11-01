@@ -7,6 +7,7 @@ using ICities;
 using CompCheck;
 using System.IO;
 using EyeCandyX.TranslationFramework;
+using static EyeCandyX.Configuration;
 
 namespace EyeCandyX.GUI
 {
@@ -209,8 +210,9 @@ namespace EyeCandyX.GUI
             _gameSpeedLabel.padding = new RectOffset(0, 0, 0, 0);
             _gameSpeedSlider = UIUtils.CreateSlider(gameSpeedContainer, 0f, 2f);
             _gameSpeedSlider.name = "gameSpeedSlider";
+            Preset PresetInstance = new Preset();
             _gameSpeedSlider.stepSize = 0.01f;
-            _gameSpeedSlider.value = Time.timeScale;
+            _gameSpeedSlider.value = PresetInstance.customTimeScale;
             _gameSpeedSlider.eventValueChanged += ValueChanged;
 
             // Reset button:
