@@ -26,7 +26,7 @@ namespace EyeCandyX
     {
         public string Name => Translation.Instance.GetTranslation(TranslationID.MOD_NAME);
         public string Description => Translation.Instance.GetTranslation(TranslationID.MOD_DESCRIPTION);
-        public const string version = "1.2";
+        public const string version = "1.8";
         internal UUICustomButton _uuiButton;
 
 
