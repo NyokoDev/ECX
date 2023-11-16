@@ -50,12 +50,12 @@
 		<Translation ID="PresetNameTooltip" String="Пожалуйста, введите имя пресета" />
 		<Translation ID="ConfirmOverwrite" String="Подтвердить перезапись" />
 		<Translation ID="Cancel" String="Отмена" />
-		<Translation ID="SETTINGS_LOADMOSTRECENT" String="Carregar automaticamente o preset mais recente ao iniciar." />
-		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="Ativar controle de tempo." />
-		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="Ativar a funcionalidade de controle de tempo, incluindo o controle deslizante de hora do dia." />
-		<Translation ID="SETTINGS_DESIREDKEY" String="Selecionar a combinação de teclas preferida para acessar a interface do mod." />
-		<Translation ID="SETTINGS_DEBUGDATA" String="Registrar dados no log de saída de depuração." />
-		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Pode afetar o desempenho." />
+		<Translation ID="SETTINGS_LOADMOSTRECENT" String="Автоматически загружать последнюю предустановку при запуске." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL" String="Включить контроль времени." />
+		<Translation ID="SETTINGS_ENABLESIMCONTROL_TOOLTIP" String="Включить функцию отслеживания времени, включая ползунок времени суток." />
+		<Translation ID="SETTINGS_DESIREDKEY" String="Выберите предпочтительную комбинацию клавиш для доступа к интерфейсу мода." />
+		<Translation ID="SETTINGS_DEBUGDATA" String="Записывать данные в журнал вывода отладки." />
+		<Translation ID="SETTINGS_DEBUGDATA_TOOLTIP" String="Это может повлиять на производительность." />
 		<Translation ID="GAMESPEED" String="Скорость игры" />
 	</Translations>
 </Language>
